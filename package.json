@@ -1,0 +1,47 @@
+{
+  "name": "wireframer",
+  "description": "A wireframing / ui tool for mocking web-based applications.",
+  "version": "0.1.10",
+  "author": "Rudi Olckers <d3vimust@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack serve --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --mode production --progress",
+    "release": "bump patch && cross-env NODE_ENV=production webpack --mode production --progress"
+  },
+  "resolutions": {
+    "chokidar": "^3.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "dragselect": "^2.0.2",
+    "html2canvas": "^1.0.0-alpha.9",
+    "interactjs": "^1.10.8",
+    "lodash": "^4.17.21",
+    "vue": "^2.5.11",
+    "vuex": "^3.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.1.1",
+    "file-loader": "^6.2.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "version-bump-prompt": "^6.1.0",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
